@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		0EE865FAF33CA52485DA261A /* libPods-findMoreBeatuifulPics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB5DCDBF18C9589098E5DF /* libPods-findMoreBeatuifulPics.a */; };
 		84F60CA722314B8800269981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CA622314B8800269981 /* AppDelegate.m */; };
-		84F60CAA22314B8800269981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CA922314B8800269981 /* ViewController.m */; };
-		84F60CAD22314B8800269981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F60CAB22314B8800269981 /* Main.storyboard */; };
 		84F60CB022314B8800269981 /* findMoreBeatuifulPics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CAE22314B8800269981 /* findMoreBeatuifulPics.xcdatamodeld */; };
 		84F60CB222314B8900269981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F60CB122314B8900269981 /* Assets.xcassets */; };
 		84F60CB522314B8900269981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F60CB322314B8900269981 /* LaunchScreen.storyboard */; };
 		84F60CB822314B8900269981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CB722314B8900269981 /* main.m */; };
+		84F60CD8223151C000269981 /* FMPicLineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CC0223151C000269981 /* FMPicLineViewModel.m */; };
+		84F60CD9223151C000269981 /* FMMainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CC1223151C000269981 /* FMMainViewModel.m */; };
+		84F60CDA223151C000269981 /* FMNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CC6223151C000269981 /* FMNetService.m */; };
+		84F60CDB223151C000269981 /* FMLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CC8223151C000269981 /* FMLink.m */; };
+		84F60CDC223151C000269981 /* FMUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CC9223151C000269981 /* FMUrl.m */; };
+		84F60CDD223151C000269981 /* FMPicsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CCA223151C000269981 /* FMPicsModel.m */; };
+		84F60CDE223151C000269981 /* FMProfileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CCB223151C000269981 /* FMProfileImage.m */; };
+		84F60CDF223151C000269981 /* FMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CCC223151C000269981 /* FMUser.m */; };
+		84F60CE0223151C000269981 /* FMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CD3223151C000269981 /* FMMainViewController.m */; };
+		84F60CE1223151C000269981 /* FMPicLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CD6223151C000269981 /* FMPicLineCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +31,31 @@
 		84F60CA222314B8800269981 /* findMoreBeatuifulPics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findMoreBeatuifulPics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F60CA522314B8800269981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84F60CA622314B8800269981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84F60CA822314B8800269981 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84F60CA922314B8800269981 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		84F60CAC22314B8800269981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F60CAF22314B8800269981 /* findMoreBeatuifulPics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = findMoreBeatuifulPics.xcdatamodel; sourceTree = "<group>"; };
 		84F60CB122314B8900269981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F60CB422314B8900269981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F60CB622314B8900269981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F60CB722314B8900269981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F60CC0223151C000269981 /* FMPicLineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPicLineViewModel.m; sourceTree = "<group>"; };
+		84F60CC1223151C000269981 /* FMMainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMainViewModel.m; sourceTree = "<group>"; };
+		84F60CC2223151C000269981 /* FMPicLineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPicLineViewModel.h; sourceTree = "<group>"; };
+		84F60CC3223151C000269981 /* FMMainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMainViewModel.h; sourceTree = "<group>"; };
+		84F60CC5223151C000269981 /* FMNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNetService.h; sourceTree = "<group>"; };
+		84F60CC6223151C000269981 /* FMNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNetService.m; sourceTree = "<group>"; };
+		84F60CC8223151C000269981 /* FMLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMLink.m; sourceTree = "<group>"; };
+		84F60CC9223151C000269981 /* FMUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUrl.m; sourceTree = "<group>"; };
+		84F60CCA223151C000269981 /* FMPicsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPicsModel.m; sourceTree = "<group>"; };
+		84F60CCB223151C000269981 /* FMProfileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMProfileImage.m; sourceTree = "<group>"; };
+		84F60CCC223151C000269981 /* FMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMUser.m; sourceTree = "<group>"; };
+		84F60CCD223151C000269981 /* FMLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMLink.h; sourceTree = "<group>"; };
+		84F60CCE223151C000269981 /* FMPicsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPicsModel.h; sourceTree = "<group>"; };
+		84F60CCF223151C000269981 /* FMUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUrl.h; sourceTree = "<group>"; };
+		84F60CD0223151C000269981 /* FMProfileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMProfileImage.h; sourceTree = "<group>"; };
+		84F60CD1223151C000269981 /* FMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMUser.h; sourceTree = "<group>"; };
+		84F60CD3223151C000269981 /* FMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMainViewController.m; sourceTree = "<group>"; };
+		84F60CD4223151C000269981 /* FMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMainViewController.h; sourceTree = "<group>"; };
+		84F60CD6223151C000269981 /* FMPicLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPicLineCell.m; sourceTree = "<group>"; };
+		84F60CD7223151C000269981 /* FMPicLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPicLineCell.h; sourceTree = "<group>"; };
 		9B14C8113E127446B263C51D /* Pods-findMoreBeatuifulPics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findMoreBeatuifulPics.release.xcconfig"; path = "Target Support Files/Pods-findMoreBeatuifulPics/Pods-findMoreBeatuifulPics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,11 +100,9 @@
 		84F60CA422314B8800269981 /* findMoreBeatuifulPics */ = {
 			isa = PBXGroup;
 			children = (
+				84F60CBE223151C000269981 /* showPics */,
 				84F60CA522314B8800269981 /* AppDelegate.h */,
 				84F60CA622314B8800269981 /* AppDelegate.m */,
-				84F60CA822314B8800269981 /* ViewController.h */,
-				84F60CA922314B8800269981 /* ViewController.m */,
-				84F60CAB22314B8800269981 /* Main.storyboard */,
 				84F60CB122314B8900269981 /* Assets.xcassets */,
 				84F60CB322314B8900269981 /* LaunchScreen.storyboard */,
 				84F60CB622314B8900269981 /* Info.plist */,
@@ -89,13 +112,79 @@
 			path = findMoreBeatuifulPics;
 			sourceTree = "<group>";
 		};
+		84F60CBE223151C000269981 /* showPics */ = {
+			isa = PBXGroup;
+			children = (
+				84F60CBF223151C000269981 /* ViewModels */,
+				84F60CC4223151C000269981 /* NetServices */,
+				84F60CC7223151C000269981 /* Models */,
+				84F60CD2223151C000269981 /* Controllers */,
+				84F60CD5223151C000269981 /* Views */,
+			);
+			path = showPics;
+			sourceTree = "<group>";
+		};
+		84F60CBF223151C000269981 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84F60CC3223151C000269981 /* FMMainViewModel.h */,
+				84F60CC1223151C000269981 /* FMMainViewModel.m */,
+				84F60CC2223151C000269981 /* FMPicLineViewModel.h */,
+				84F60CC0223151C000269981 /* FMPicLineViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84F60CC4223151C000269981 /* NetServices */ = {
+			isa = PBXGroup;
+			children = (
+				84F60CC5223151C000269981 /* FMNetService.h */,
+				84F60CC6223151C000269981 /* FMNetService.m */,
+			);
+			path = NetServices;
+			sourceTree = "<group>";
+		};
+		84F60CC7223151C000269981 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84F60CCD223151C000269981 /* FMLink.h */,
+				84F60CC8223151C000269981 /* FMLink.m */,
+				84F60CCE223151C000269981 /* FMPicsModel.h */,
+				84F60CCA223151C000269981 /* FMPicsModel.m */,
+				84F60CD0223151C000269981 /* FMProfileImage.h */,
+				84F60CCB223151C000269981 /* FMProfileImage.m */,
+				84F60CCF223151C000269981 /* FMUrl.h */,
+				84F60CC9223151C000269981 /* FMUrl.m */,
+				84F60CD1223151C000269981 /* FMUser.h */,
+				84F60CCC223151C000269981 /* FMUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84F60CD2223151C000269981 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84F60CD4223151C000269981 /* FMMainViewController.h */,
+				84F60CD3223151C000269981 /* FMMainViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84F60CD5223151C000269981 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84F60CD7223151C000269981 /* FMPicLineCell.h */,
+				84F60CD6223151C000269981 /* FMPicLineCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CEAF7678A0902DC2E9085068 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7073F8EC917BEC18EF04D473 /* Pods-findMoreBeatuifulPics.debug.xcconfig */,
 				9B14C8113E127446B263C51D /* Pods-findMoreBeatuifulPics.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,7 +249,6 @@
 			files = (
 				84F60CB522314B8900269981 /* LaunchScreen.storyboard in Resources */,
 				84F60CB222314B8900269981 /* Assets.xcassets in Resources */,
-				84F60CAD22314B8800269981 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,24 +306,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F60CDC223151C000269981 /* FMUrl.m in Sources */,
+				84F60CDF223151C000269981 /* FMUser.m in Sources */,
+				84F60CE0223151C000269981 /* FMMainViewController.m in Sources */,
 				84F60CB022314B8800269981 /* findMoreBeatuifulPics.xcdatamodeld in Sources */,
-				84F60CAA22314B8800269981 /* ViewController.m in Sources */,
+				84F60CD9223151C000269981 /* FMMainViewModel.m in Sources */,
 				84F60CB822314B8900269981 /* main.m in Sources */,
+				84F60CDB223151C000269981 /* FMLink.m in Sources */,
+				84F60CDE223151C000269981 /* FMProfileImage.m in Sources */,
+				84F60CD8223151C000269981 /* FMPicLineViewModel.m in Sources */,
 				84F60CA722314B8800269981 /* AppDelegate.m in Sources */,
+				84F60CDA223151C000269981 /* FMNetService.m in Sources */,
+				84F60CDD223151C000269981 /* FMPicsModel.m in Sources */,
+				84F60CE1223151C000269981 /* FMPicLineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84F60CAB22314B8800269981 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84F60CAC22314B8800269981 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84F60CB322314B8900269981 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3JKK2868V;
 				INFOPLIST_FILE = findMoreBeatuifulPics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P3JKK2868V;
 				INFOPLIST_FILE = findMoreBeatuifulPics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
