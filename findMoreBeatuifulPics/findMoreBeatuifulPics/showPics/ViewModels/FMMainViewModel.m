@@ -57,7 +57,7 @@
  @param finish 完成回调
  */
 - (void)upRefreshWithFinished:(void (^)(BOOL isSuccess, NSString *msg))finish {
-    [FMNetService getPicModelsWithPage:self.currentPage finished:^(BOOL isSuccess, NSArray<FMPicsModel *> * _Nonnull models, NSString * _Nonnull msg) {
+    [FMNetService getPicModelsWithPage:++self.currentPage finished:^(BOOL isSuccess, NSArray<FMPicsModel *> * _Nonnull models, NSString * _Nonnull msg) {
         //获取数据失败直接返回
         if (!isSuccess) {
             finish(isSuccess,msg);

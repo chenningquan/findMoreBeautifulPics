@@ -32,33 +32,36 @@
 - (void)configSubViews {
     UIView *backView = [UIView new];
     backView.backgroundColor = [UIColor whiteColor];
+    backView.layer.shadowColor = [UIColor blackColor].CGColor;
+    backView.layer.shadowOpacity = 0.5;
+    backView.layer.shadowOffset = CGSizeMake(3, 3);
     [self.contentView addSubview:backView];
     [backView addSubview:self.imgView];
     [backView addSubview:self.publishInfoLabel];
     
     [backView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView);
-        make.leading.trailing.equalTo(self.contentView);
+        make.leading.equalTo(self.contentView).offset(10);
+        make.trailing.equalTo(self.contentView).offset(-10);
         make.bottom.equalTo(self.contentView).offset(-40);
     }];
     
     [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(backView.mas_top).offset(10);
-        make.leading.equalTo(backView.mas_leading).offset(20);
-        make.trailing.equalTo(backView.mas_trailing).offset(-20);
+        make.leading.equalTo(backView.mas_leading).offset(10);
+        make.trailing.equalTo(backView.mas_trailing).offset(-10);
         make.bottom.equalTo(backView.mas_bottom).offset(-40);
     }];
     
     [self.publishInfoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(backView).offset(-10);
-        make.leading.equalTo(backView).offset(20);
-        make.trailing.equalTo(backView).offset(-20);
+        make.leading.trailing.equalTo(self.imgView);
         make.height.offset(20);
     }];
 }
 
 - (void)refreshWithViewModel:(FMPicLineViewModel *)viewModel {
-    [self.imgView sd_setImageWithURL:[NSURL URLWithString:viewModel.previewImgUrl]];
+    [self.imgView sd_setImageWithURL:[NSURL URLWithString:viewModel.previewImgUrl] placeholderImage:[UIImage imageNamed:@"placeHolder"]];
     self.publishInfoLabel.text = viewModel.publishInfo;
 }
 

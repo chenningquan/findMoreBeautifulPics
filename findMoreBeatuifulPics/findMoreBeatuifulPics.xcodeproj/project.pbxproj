@@ -79,6 +79,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		84C7DF8C2232C12100F1E504 /* Venders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Venders;
+			sourceTree = "<group>";
+		};
 		84F60C9922314B8800269981 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +122,7 @@
 		84F60CBE223151C000269981 /* showPics */ = {
 			isa = PBXGroup;
 			children = (
+				84C7DF8C2232C12100F1E504 /* Venders */,
 				84F60CBF223151C000269981 /* ViewModels */,
 				84F60CC4223151C000269981 /* NetServices */,
 				84F60CC7223151C000269981 /* Models */,
