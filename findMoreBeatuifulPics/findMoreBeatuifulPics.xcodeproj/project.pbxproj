@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0EE865FAF33CA52485DA261A /* libPods-findMoreBeatuifulPics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAB5DCDBF18C9589098E5DF /* libPods-findMoreBeatuifulPics.a */; };
+		842D54B222335E6200A18F02 /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D54AA22335E6200A18F02 /* HZWaitingView.m */; };
+		842D54B322335E6200A18F02 /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D54AC22335E6200A18F02 /* HZPhotoBrowser.m */; };
+		842D54B422335E6200A18F02 /* HZPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 842D54AF22335E6200A18F02 /* HZPhotoBrowser.bundle */; };
+		842D54B522335E6200A18F02 /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D54B022335E6200A18F02 /* HZPhotoBrowserView.m */; };
 		84F60CA722314B8800269981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CA622314B8800269981 /* AppDelegate.m */; };
 		84F60CB022314B8800269981 /* findMoreBeatuifulPics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F60CAE22314B8800269981 /* findMoreBeatuifulPics.xcdatamodeld */; };
 		84F60CB222314B8900269981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F60CB122314B8900269981 /* Assets.xcassets */; };
@@ -28,6 +32,14 @@
 /* Begin PBXFileReference section */
 		4DAB5DCDBF18C9589098E5DF /* libPods-findMoreBeatuifulPics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-findMoreBeatuifulPics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7073F8EC917BEC18EF04D473 /* Pods-findMoreBeatuifulPics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findMoreBeatuifulPics.debug.xcconfig"; path = "Target Support Files/Pods-findMoreBeatuifulPics/Pods-findMoreBeatuifulPics.debug.xcconfig"; sourceTree = "<group>"; };
+		842D54AA22335E6200A18F02 /* HZWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZWaitingView.m; sourceTree = "<group>"; };
+		842D54AB22335E6200A18F02 /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		842D54AC22335E6200A18F02 /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		842D54AD22335E6200A18F02 /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		842D54AE22335E6200A18F02 /* HZWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZWaitingView.h; sourceTree = "<group>"; };
+		842D54AF22335E6200A18F02 /* HZPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HZPhotoBrowser.bundle; sourceTree = "<group>"; };
+		842D54B022335E6200A18F02 /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		842D54B122335E6200A18F02 /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
 		84F60CA222314B8800269981 /* findMoreBeatuifulPics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findMoreBeatuifulPics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F60CA522314B8800269981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84F60CA622314B8800269981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,9 +91,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		842D54A922335E6200A18F02 /* ptotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				842D54AF22335E6200A18F02 /* HZPhotoBrowser.bundle */,
+				842D54B122335E6200A18F02 /* HZPhotoBrowser.h */,
+				842D54AC22335E6200A18F02 /* HZPhotoBrowser.m */,
+				842D54AB22335E6200A18F02 /* HZPhotoBrowserConfig.h */,
+				842D54AD22335E6200A18F02 /* HZPhotoBrowserView.h */,
+				842D54B022335E6200A18F02 /* HZPhotoBrowserView.m */,
+				842D54AE22335E6200A18F02 /* HZWaitingView.h */,
+				842D54AA22335E6200A18F02 /* HZWaitingView.m */,
+			);
+			path = ptotoBrowser;
+			sourceTree = "<group>";
+		};
 		84C7DF8C2232C12100F1E504 /* Venders */ = {
 			isa = PBXGroup;
 			children = (
+				842D54A922335E6200A18F02 /* ptotoBrowser */,
 			);
 			path = Venders;
 			sourceTree = "<group>";
@@ -255,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842D54B422335E6200A18F02 /* HZPhotoBrowser.bundle in Resources */,
 				84F60CB522314B8900269981 /* LaunchScreen.storyboard in Resources */,
 				84F60CB222314B8900269981 /* Assets.xcassets in Resources */,
 			);
@@ -273,12 +302,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-findMoreBeatuifulPics/Pods-findMoreBeatuifulPics-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,6 +353,9 @@
 				84F60CB822314B8900269981 /* main.m in Sources */,
 				84F60CDB223151C000269981 /* FMLink.m in Sources */,
 				84F60CDE223151C000269981 /* FMProfileImage.m in Sources */,
+				842D54B322335E6200A18F02 /* HZPhotoBrowser.m in Sources */,
+				842D54B222335E6200A18F02 /* HZWaitingView.m in Sources */,
+				842D54B522335E6200A18F02 /* HZPhotoBrowserView.m in Sources */,
 				84F60CD8223151C000269981 /* FMPicLineViewModel.m in Sources */,
 				84F60CA722314B8800269981 /* AppDelegate.m in Sources */,
 				84F60CDA223151C000269981 /* FMNetService.m in Sources */,

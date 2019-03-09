@@ -9,6 +9,7 @@ target 'findMoreBeatuifulPics' do
   pod 'MJRefresh'
   pod 'SDWebImage'
   pod 'YYModel'
+  pod 'SVProgressHUD'
   # Pods for findMoreBeatuifulPics
 
 end

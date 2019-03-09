@@ -10,6 +10,8 @@
 #import "FMMainViewModel.h"
 #import "FMPicLineCell.h"
 #import <MJRefresh.h>
+#import "HZPhotoBrowser.h"
+#import <SVProgressHUD.h>
 
 @interface FMMainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -32,29 +34,47 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configSubViews];
+    [self configHUD];
     [self.tableView.mj_header beginRefreshing];
 }
 
 
 #pragma mark - Init
 - (void)configSubViews {
-    self.navigationItem.title = @"图片查看";
+    self.navigationItem.title = @"发现更多美图";
     self.navigationController.navigationBar.translucent = NO;
     [self.view addSubview:self.tableView];
+}
+
+- (void)configHUD {
+    [SVProgressHUD setBackgroundColor:[UIColor grayColor]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    [SVProgressHUD setMinimumDismissTimeInterval:1];
+    [SVProgressHUD setMaximumDismissTimeInterval:1];
 }
 
 #pragma mark - Actions
 - (void)downRefresh {
     [self.viewModel downRefreshWithFinished:^(BOOL isSuccess, NSString * _Nonnull msg) {
         [self.tableView.mj_header endRefreshing];
-        [self.tableView reloadData];
+        if (isSuccess) {
+            [self.tableView reloadData];
+        } else {
+            [SVProgressHUD showErrorWithStatus:msg];
+        }
+        
     }];
 }
 
 - (void)upRefresh {
     [self.viewModel upRefreshWithFinished:^(BOOL isSuccess, NSString * _Nonnull msg) {
         [self.tableView.mj_footer endRefreshing];
-        [self.tableView reloadData];
+        if (isSuccess) {
+            [self.tableView reloadData];
+        } else {
+            [SVProgressHUD showErrorWithStatus:msg];
+        }
+        
     }];
 }
 
@@ -83,7 +103,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    FMPicLineViewModel *cellModel = self.viewModel.datas[indexPath.row];
+    HZPhotoBrowser *browser = [[HZPhotoBrowser alloc] init];
+    browser.isFullWidthForLandScape = YES;
+    browser.isNeedLandscape = YES;
+    browser.imageArray = @[cellModel.previewImgUrl];
+    browser.isNeedSave = NO;
+    [browser show];
 }
 
 #pragma mark - Getter & Setter
